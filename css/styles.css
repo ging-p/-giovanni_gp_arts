@@ -1,0 +1,85 @@
+
+.menu-btn{
+  height: 80vh;
+}
+.card-foto-box {
+  width: auto;  
+  height: 30vh;
+  overflow: hidden;
+}
+
+.card-foto{
+  transition: transform 2s;
+}
+
+.card-foto-box:hover .card-foto{
+  width: 100%;
+  transform: scale(1.3);
+ }  
+
+/*Botoes de link*/
+.butn{
+  border-width: 0.8px;
+  background-color: #000 /*#28282B*/;
+  color: var(--clr);
+  text-transform: uppercase;
+  font-size: 3vh;
+  letter-spacing: 0.1em;
+}
+
+.butn:hover{
+  background-color: #000;
+  color: var(--clr);
+  letter-spacing: 0.2em;
+  transition: 0.5s;
+  box-shadow: 0 0 35px var(--clr);
+}
+
+.butn:before{
+  inset: 2px;
+  background-color: #FF7800;
+}
+
+.icon{
+  display: none;
+}
+.butn:hover > .icon{
+  display: inline;
+}
+
+
+.btn-img {
+  width: 8vh;
+}
+
+.profile-img {
+  width: 150px;
+  border: solid none;
+  box-shadow: 0 0 5px var(--clr);
+}
+.profile-img:hover{
+  transition: 0.5s;
+  box-shadow: 0 0 30px var(--clr);
+}
+.nome:hover{
+  letter-spacing: 0.10em;
+  transition: 0.5s;
+  box-shadow: 0 0 30px var(--clr);
+}
+.breakpoint{
+  display: none;
+  /*https://htmlcolorcodes.com/*/
+}
+@media only screen and (max-width: 993px) {
+  .breakpoint{
+    display: inline;
+    /*https://htmlcolorcodes.com/*/
+  }
+}
+.tags{
+  font-size: 80%;
+}
+.maisminfo{
+  height: 100vh;
+  width: 100vw;
+}
